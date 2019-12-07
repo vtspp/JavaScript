@@ -1,0 +1,14 @@
+function podeSeAposentar(idade, sexo, anos){
+ var sexM = 'M';
+ var sexIdadeM = 64 ;
+ 
+ var sexF = 'F';
+ var sexIdadeF = 59;
+ 
+ var contribuicao = 30;
+  if(sexo == sexM ){
+    return idade > sexIdadeM && anos >= contribuicao;
+  }else{
+    return idade > sexIdadeF && anos >= contribuicao;
+  }
+}
