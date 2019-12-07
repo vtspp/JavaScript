@@ -1,0 +1,8 @@
+function fatorial(umNumero){
+  var fat = umNumero;
+  for(var i = umNumero; i > 1; i--){
+    fat = fat*(i-1);
+    
+  }
+  return fat;
+}
