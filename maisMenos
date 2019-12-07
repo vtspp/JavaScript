@@ -1,0 +1,23 @@
+function maisMenos(array){
+  var positivos = 0;
+  var zero = 0;
+  var negativos = 0;
+  
+  for(var i = 0; i < array.length; i++){
+    if(array[i] > 0){
+      positivos++;
+    }else if(array[i] == 0){
+      zero++;
+    }else{
+      negativos++;
+    }
+  }
+  
+  positivos = positivos / array.length;
+  zero = zero / array.length;
+  negativos = negativos / array.length; 
+  
+  var novoArray = [positivos, zero, negativos];
+  
+  return novoArray;
+}
